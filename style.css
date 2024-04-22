@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.slideshow{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+.slideshow img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+}
+.fill{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.fill_image{
+    width: 25%; 
+    float: left;  
+}
+.fill_slide{
+    width: 400%;
+}
+#content-fill {
+    flex: 5;
+}
+section {
+    background-color: #ead8c0;
+}
+body, input, button {
+    font-family: 'Quicksand', sans-serif;
+}
+input, button {
+    font-size: 16px;
+}
+.head_bar {
+    padding: 12px;
+    background: radial-gradient(circle at top left, #ADBC9F, #436850);
+    color: white;
+    border-radius: 10px;
+}
+.head_bar h1 {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0px 20px 5px;
+    border-radius: 10px;
+    background-color: #5F374B;
+}
+main {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 16px;
+}
+.input_section {
+    flex: 5;
+    padding: 16px;
+    border: 3px solid #4ccd99;
+    border-radius: 10px;
+    height: 360px;
+}
+.input_section > h2 {
+    text-align: center;
+    color: cornflowerblue;
+}
+.input_section > form > .input {
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.input_section > form > button {
+    background-color: #8C6A5D;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+#bookSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inputBookIsComplete {
+    width: 24px;
+    height: 24px;
+}
+.input_section > form > button > span {
+    font-weight: bold;
+}
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background: #9AD0C2;
+    border: none;
+}
+.input_section > form > .input > label {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+.input_section > form > .input_inline > label {
+    color: cornflowerblue;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.box_search {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+.container_search{
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+.container_search input#searchBookTitle{
+    width: 100%;
+    height: 50px;
+    background: #9AD0C2;
+    border: none;
+    font-size: 12pt;
+    float: left;
+    color: #262626;
+    padding-left: 45px;
+    padding-right: 8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #000;
+}
+.container_search input#searchBookTitle::-webkit-input-placeholder {
+    color: #65737e;
+ }
+ .container_search input#searchBookTitle:-moz-placeholder {
+    color: #65737e;  
+ }
+ .container_search input#searchBookTitle::-moz-placeholder {
+    color: #65737e;  
+ }
+ .container_search input#searchBookTitle:-ms-input-placeholder {  
+    color: #65737e;  
+}
+.container_search .icon{
+    position: absolute;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+.btn_search {
+    font-weight: bold;
+    background: #232833;
+    height: 50px;
+    width: 55px;
+    color: #d8e4f0;
+    border-top-right-radius: 2em 5em;
+    border-bottom-right-radius: 2em 5em;
+    padding-right: 3px;
+}
+.search_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 3px solid #4ccd99;
+    border-radius: 10px;
+}
+.search_section > h2 {
+    color: cornflowerblue;
+}
+.search_section > form {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+}
+.search_section > form > input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.search_section > form > button {
+    background: transparent;
+    width: 40px;
+    border: 0;
+}
+.search_section > form > button img {
+    width:24px; height:24px
+}
+.search_section > form > button:hover {
+    background-color: #92c7cf;
+    border-radius: 5px;
+}
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 3px solid #4ccd99;
+    padding: 16px;
+    border-radius: 10px;
+}
+.book_shelf > h2 {
+    color: cornflowerblue;
+}
+.book_shelf > .book_list {
+    padding: 16px;
+}
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+.item > .inner p {
+    margin-top: 5px;
+}
+.shadow {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+.undo-button {
+    width: 30px;
+    height: 30px;
+
+    background: url('assets/undo-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+.undo-button:hover {
+    background: url('assets/undo-outline.svg');
+    background-size: contain;
+}
+.trash-button {
+    width: 30px;
+    height: 30px;
+
+    background: url('assets/trash-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+.trash-button:hover {
+    background: url('assets/trash-fill.svg');
+    background-size: contain;
+}
+@media screen and (max-width: 940px) {
+    main {
+        flex-flow: column nowrap;
+    }
+}
+@media screen and (max-width: 610px) {
+    .undo-button {
+        width: 23px;
+        height: 23px;
+    }
+    .trash-button {
+        width: 23px;
+        height: 23px;
+    }
+}

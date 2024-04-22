@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <link rel="icon" href="assets/search_book.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="slideshow">
+    <div class="fill">
+      <div class="fill_slide" id="slide">
+        <div class="fill_image">
+          <img src="assets/book_library_information.jpg" alt="Book Library Information" id="slide"/>
+        </div>
+        <div class="fill_image">
+          <img src="assets/shutterstock.jpg" alt="Shutterstock" id="slide"/>
+        </div>
+        <div class="fill_image">
+          <img src="assets/library_of_books.jpg" alt="Library of Books" id="slide"/>
+        </div>
+        <div class="fill_image">
+          <img src="assets/library_with_many_books.jpg" alt="Library with Many Books" id="slide"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="head_bar">
+    <h1>Bookshelf Apps</h1>
+  </header>
+  <main>
+      <section class="input_section">
+        <h2>Masukkan Buku Baru</h2>
+        <form id="inputBook" autocomplete="off">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input id="inputBookTitle" type="text" required>
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input id="inputBookAuthor" type="text" required>
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Tahun</label>
+            <input id="inputBookYear" type="number" required>
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <input id="inputBookIsComplete" type="checkbox">
+          </div>
+          <button id="bookSubmit" type="submit"><a id="rack">Masukkan Buku ke rak <b>Belum selesai dibaca</b></a></button>
+        </form>
+      </section>
+    
+    <div id="content-fill">
+      <section class="search_section">
+        <h2>Cari Buku</h2>
+        <form id="searchBook" autocomplete="off">
+          <div class="box_search">
+            <div class="container_search">
+              <span class="icon"><img src='assets/search.svg' width="20px"/></span>
+              <input type="search" id="searchBookTitle" placeholder="Search..." />
+            </div>
+            <button type="submit" class="btn_search">Cari</button>
+          </div>
+        </form>
+      </section>
+      
+      <section class="book_shelf">
+        <h2>Belum selesai dibaca</h2>
+        <div id="uncompleteBookshelfList" class="book_list"></div>
+      </section>
+      
+      <section class="book_shelf">
+        <h2>Selesai dibaca</h2>
+        <div id="completeBookshelfList" class="book_list"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
